@@ -43,7 +43,7 @@ def read_file(file_name):
     try:
         lines = open(file_name).read().splitlines()
     except Exception as e:
-        print str(e) # If the file was not found.
+        print(str(e)) # If the file was not found.
     return random.choice(lines)
 
 if __name__ == '__main__':
